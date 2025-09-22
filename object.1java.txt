@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+class Book {
+    String title;
+    String author;
+}
+
+class Library {
+    ArrayList<Book> books = new ArrayList<>();
+}
+
+public class LibrarySimple {
+    public static void main(String[] args) {
+        Book b1 = new Book();
+        b1.title = "Java Basics";
+        b1.author = "James Gosling";
+
+        Book b2 = new Book();
+        b2.title = "Python Guide";
+        b2.author = "Guido van Rossum";
+
+        Library lib = new Library();
+        lib.books.add(b1);
+        lib.books.add(b2);
+
+        for (Book b : lib.books) {
+            System.out.println(b.title + " by " + b.author);
+        }
+    }
+}

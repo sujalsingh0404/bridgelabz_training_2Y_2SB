@@ -1,0 +1,26 @@
+class Customer {
+    String name;
+    double balance;
+}
+
+class Bank {
+    String bankName;
+}
+
+public class BankSimple {
+    public static void main(String[] args) {
+        Bank bank = new Bank();
+        bank.bankName = "SBI";
+
+        Customer c1 = new Customer();
+        c1.name = "Hemant";
+        c1.balance = 5000;
+
+        Customer c2 = new Customer();
+        c2.name = "Rahul";
+        c2.balance = 8000;
+
+        System.out.println(c1.name + " has account in " + bank.bankName + " with balance " + c1.balance);
+        System.out.println(c2.name + " has account in " + bank.bankName + " with balance " + c2.balance);
+    }
+}
